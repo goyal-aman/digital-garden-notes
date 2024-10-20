@@ -1,3 +1,9 @@
+---
+dg-publish: true
+title: Personal Knowledge Management with Hugo & Obsidian
+date: "{{ .Date }}"
+draft: "false"
+---
 ### Prerequisites
 
 - **Obsidian** installed on your machine
