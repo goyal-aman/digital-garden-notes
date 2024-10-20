@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Prerequisites
+  #
+
+
+Obsidian installed on your machine
+Basic knowledge of Markdown
+A GitHub account
+Hugo installed on your machine (if not, follow the official installation guide)
+Git installed on your machine
+
+
+  Step 1: Set up GitHub repository
+  #
+
+
+
+Create a new repository on GitHub.
+
+Go to your GitHub account and create a new repository.
+Name it &lt;your-username&gt;.github.io (replace &lt;your-username&gt; with your GitHub username). This is important because GitHub Pages uses this naming convention to host user pages.
+Set it as public and initialize it with a README.md file.
+
+
+
+Clone the repository to your local machine.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/personal-knowledge-management-with-hugo--obsidian/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Prerequisites # Obsidian installed on your machine Basic knowledge of Markdown A GitHub account Hugo installed on your machine (if not, follow the official installation guide) Git installed on your machine Step 1: Set up GitHub repository # Create a new repository on GitHub.
+Go to your GitHub account and create a new repository. Name it &lt;your-username&gt;.github.io (replace &lt;your-username&gt; with your GitHub username). This is important because GitHub Pages uses this naming convention to host user pages. Set it as public and initialize it with a README.md file. Clone the repository to your local machine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+<title>Personal Knowledge Management With Hugo &amp; Obsidian | My New Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/personal-knowledge-management-with-hugo--obsidian/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.e19c2f069d79e465b33f2b1fe082e82587285967bc5818c816b0ea34b90065ee.js" integrity="sha256-4ZwvBp155GWzPysf4ILoJYcoWWe8WBjIFrDqNLkAZe4=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Personal Knowledge Management With Hugo &amp; Obsidian</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#step-1-set-up-github-repository">Step 1: Set up GitHub repository</a></li>
+        <li><a href="#step-2-install-and-configure-hugo">Step 2: Install and configure Hugo</a></li>
+        <li><a href="#step-3-integrating-obsidian-with-hugo">Step 3: Integrating Obsidian with Hugo</a></li>
+        <li><a href="#step-4-build-and-test-the-hugo-site-locally">Step 4: Build and test the Hugo site locally</a></li>
+        <li><a href="#step-5-deploy-to-github-pages">Step 5: Deploy to GitHub Pages</a></li>
+        <li><a href="#step-6-automating-with-github-actions-optional">Step 6: Automating with GitHub Actions (optional)</a></li>
+        <li><a href="#step-7-keep-adding-and-updating-content">Step 7: Keep Adding and Updating Content</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h3 id="prerequisites">
+  Prerequisites
+  <a class="anchor" href="#prerequisites">#</a>
+</h3>
+<ul>
+<li><strong>Obsidian</strong> installed on your machine</li>
+<li>Basic knowledge of <strong>Markdown</strong></li>
+<li>A <strong>GitHub</strong> account</li>
+<li>Hugo installed on your machine (if not, follow the official installation guide)</li>
+<li>Git installed on your machine</li>
+</ul>
+<h3 id="step-1-set-up-github-repository">
+  Step 1: Set up GitHub repository
+  <a class="anchor" href="#step-1-set-up-github-repository">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Create a new repository</strong> on GitHub.</p>
+<ul>
+<li>Go to your <a href="https://github.com/">GitHub</a> account and create a new repository.</li>
+<li>Name it <code>&lt;your-username&gt;.github.io</code> (replace <code>&lt;your-username&gt;</code> with your GitHub username). This is important because GitHub Pages uses this naming convention to host user pages.</li>
+<li>Set it as <strong>public</strong> and initialize it with a <code>README.md</code> file.</li>
+</ul>
+</li>
+<li>
+<p><strong>Clone the repository</strong> to your local machine.</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>git clone https://github.com/&lt;your-username&gt;/&lt;your-username&gt;.github.io cd &lt;your-username&gt;.github.io</code></p>
+</li>
+</ol>
+<h3 id="step-2-install-and-configure-hugo">
+  Step 2: Install and configure Hugo
+  <a class="anchor" href="#step-2-install-and-configure-hugo">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Install Hugo</strong> if not already installed.</p>
+<ul>
+<li>You can install Hugo from the terminal. Follow the instructions based on your OS from the Hugo website.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create a new Hugo site</strong>. Inside your cloned repository:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>hugo new site my-digital-garden cd my-digital-garden</code></p>
+</li>
+<li>
+<p><strong>Choose a theme</strong>.</p>
+<ul>
+<li>
+<p>Hugo has a wide selection of themes, but since we are creating a digital garden, you can use a theme like hugo-book or <a href="https://github.com/apvarun/digital-garden-hugo">hugo-theme-digitalgarden</a>.</p>
+</li>
+<li>
+<p>Download a theme and add it to your Hugo site:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>git submodule add https://github.com/apvarun/digital-garden-hugo.git themes/digital-garden-hugo</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Hugo&rsquo;s configuration</strong> (<code>config.toml</code>).</p>
+<ul>
+<li>
+<p>Update your <code>config.toml</code> to use the theme and configure the basic site settings.</p>
+</li>
+<li>
+<p>Example:</p>
+<p>toml</p>
+<p>Copy code</p>
+<p><code>baseURL = &quot;https://&lt;your-username&gt;.github.io/&quot; languageCode = &quot;en-us&quot; title = &quot;My Digital Garden&quot; theme = &quot;digital-garden-hugo&quot;</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-3-integrating-obsidian-with-hugo">
+  Step 3: Integrating Obsidian with Hugo
+  <a class="anchor" href="#step-3-integrating-obsidian-with-hugo">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Create an Obsidian vault</strong> if you haven’t already, or use your existing vault.</p>
+<ul>
+<li>Open Obsidian and go to your vault.</li>
+</ul>
+</li>
+<li>
+<p><strong>Set the Hugo content directory as a folder in Obsidian</strong>.</p>
+<ul>
+<li>Inside your Hugo project, go to the <code>content</code> directory.</li>
+<li>Link this directory with Obsidian by adding it as a folder inside your Obsidian vault.</li>
+</ul>
+</li>
+<li>
+<p><strong>Write notes in Obsidian</strong> using Markdown.</p>
+<ul>
+<li>
+<p>Each note will become a page in your Hugo-generated site.</p>
+</li>
+<li>
+<p>For each note you want to publish, ensure it’s saved as a <code>.md</code> file in the <code>content</code> folder.</p>
+</li>
+<li>
+<p>Example front matter for each note (for Hugo):</p>
+<p>yaml</p>
+<p>Copy code</p>
+<p><code>--- title: &quot;My Note Title&quot; date: 2024-10-20 ---</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Use Obsidian’s bidirectional linking</strong>.</p>
+<ul>
+<li>You can use Obsidian’s link syntax (<code>[[Note Title]]</code>) to link notes, which will work well when you generate the site in Hugo.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-4-build-and-test-the-hugo-site-locally">
+  Step 4: Build and test the Hugo site locally
+  <a class="anchor" href="#step-4-build-and-test-the-hugo-site-locally">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Build your site locally</strong>. Inside your Hugo directory, run:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>hugo server</code></p>
+<ul>
+<li>This will start a local server on <code>localhost:1313</code>, allowing you to preview your digital garden.</li>
+</ul>
+</li>
+<li>
+<p><strong>Make adjustments to the content and theme</strong>.</p>
+<ul>
+<li>As you view the site, make changes to your <code>config.toml</code>, themes, or add custom CSS if necessary to match your desired look.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-5-deploy-to-github-pages">
+  Step 5: Deploy to GitHub Pages
+  <a class="anchor" href="#step-5-deploy-to-github-pages">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Build the static files</strong> for GitHub Pages:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>hugo</code></p>
+<ul>
+<li>This will generate your site in the <code>public/</code> directory.</li>
+</ul>
+</li>
+<li>
+<p><strong>Push the site to GitHub</strong>.</p>
+<ul>
+<li>
+<p>Move all files from the <code>public</code> directory to the root of your GitHub Pages repository.</p>
+</li>
+<li>
+<p>Commit the changes:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>git add . git commit -m &quot;Deploy Hugo site&quot; git push origin main</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Set up GitHub Pages</strong>.</p>
+<ul>
+<li>In your GitHub repository, go to <strong>Settings</strong> &gt; <strong>Pages</strong>.</li>
+<li>Select the <strong>main branch</strong> as the source and save.</li>
+</ul>
+</li>
+<li>
+<p><strong>Visit your site</strong>.</p>
+<ul>
+<li>After GitHub Pages builds your site, visit <code>&lt;your-username&gt;.github.io</code>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-6-automating-with-github-actions-optional">
+  Step 6: Automating with GitHub Actions (optional)
+  <a class="anchor" href="#step-6-automating-with-github-actions-optional">#</a>
+</h3>
+<p>You can automate the process of building and deploying your Hugo site using <strong>GitHub Actions</strong>.</p>
+<ol>
+<li>
+<p>Create a <code>.github/workflows/gh-pages.yml</code> file in your repository:</p>
+<p>yaml</p>
+<p>Copy code</p>
+<p><code>name: Deploy Hugo site  on:   push:     branches:       - main  jobs:   deploy:     runs-on: ubuntu-latest     steps:     - name: Checkout repository       uses: actions/checkout@v2     - name: Set up Hugo       uses: peaceiris/actions-hugo@v2       with:         hugo-version: 'latest'     - name: Build the site       run: hugo     - name: Deploy to GitHub Pages       uses: peaceiris/actions-gh-pages@v3       with:         github_token: ${{ secrets.GITHUB_TOKEN }}         publish_dir: ./public</code></p>
+</li>
+<li>
+<p><strong>Commit and push</strong> the workflow file:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>git add .github/workflows/gh-pages.yml git commit -m &quot;Add GitHub Actions workflow&quot; git push origin main</code></p>
+</li>
+</ol>
+<p>Now, every time you push new content to the <code>main</code> branch, GitHub Actions will automatically build and deploy your Hugo site.</p>
+<h3 id="step-7-keep-adding-and-updating-content">
+  Step 7: Keep Adding and Updating Content
+  <a class="anchor" href="#step-7-keep-adding-and-updating-content">#</a>
+</h3>
+<p>Now you can use Obsidian to manage your notes and content. Any notes you write in Obsidian will be reflected in your digital garden on GitHub Pages whenever you commit and push them.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#step-1-set-up-github-repository">Step 1: Set up GitHub repository</a></li>
+        <li><a href="#step-2-install-and-configure-hugo">Step 2: Install and configure Hugo</a></li>
+        <li><a href="#step-3-integrating-obsidian-with-hugo">Step 3: Integrating Obsidian with Hugo</a></li>
+        <li><a href="#step-4-build-and-test-the-hugo-site-locally">Step 4: Build and test the Hugo site locally</a></li>
+        <li><a href="#step-5-deploy-to-github-pages">Step 5: Deploy to GitHub Pages</a></li>
+        <li><a href="#step-6-automating-with-github-actions-optional">Step 6: Automating with GitHub Actions (optional)</a></li>
+        <li><a href="#step-7-keep-adding-and-updating-content">Step 7: Keep Adding and Updating Content</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
