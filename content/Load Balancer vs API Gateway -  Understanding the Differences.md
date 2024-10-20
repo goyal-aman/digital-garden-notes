@@ -1,7 +1,7 @@
 ---
 dg-publish: "true"
 title: Load Balancer vs API Gateway -  Understanding the Differences
-date: "{{ .Date }}"
+date: "2024-10-21"
 draft: "false"
 ---
 In modern application architectures, both Load Balancers and API Gateways play crucial roles in ensuring efficient resource utilization and enhanced performance. However, they serve different purposes and function in unique ways. Here’s a brief overview of each component, along with their differences and use cases.

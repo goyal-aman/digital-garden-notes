@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 title: Personal Knowledge Management with Hugo & Obsidian
-date: "2024-10-21"
+date: "{{ 2024-10-21 }}"
 draft: "false"
 ---
 ### Prerequisites

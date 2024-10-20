@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="In modern application architectures, both Load Balancers and API Gateways play crucial roles in ensuring efficient resource utilization and enhanced performance. However, they serve different purposes and function in unique ways. Here’s a brief overview of each component, along with their differences and use cases.
+
+  What is a Load Balancer?
+  #
+
+A Load Balancer is a device or software that distributes incoming network traffic across multiple servers. The primary goal is to ensure no single server becomes overwhelmed, which can lead to degraded performance or downtime. Load Balancers improve application availability and reliability by:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://goyal-aman.github.io/digital-garden-notes/load-balancer-vs-api-gateway----understanding-the-differences/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="Load Balancer vs API Gateway -  Understanding the Differences">
+  <meta property="og:description" content="In modern application architectures, both Load Balancers and API Gateways play crucial roles in ensuring efficient resource utilization and enhanced performance. However, they serve different purposes and function in unique ways. Here’s a brief overview of each component, along with their differences and use cases.
+What is a Load Balancer? # A Load Balancer is a device or software that distributes incoming network traffic across multiple servers. The primary goal is to ensure no single server becomes overwhelmed, which can lead to degraded performance or downtime. Load Balancers improve application availability and reliability by:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+<title>Load Balancer vs API Gateway -  Understanding the Differences | My New Hugo Site</title>
+<link rel="icon" href="/digital-garden-notes/favicon.png" >
+<link rel="manifest" href="/digital-garden-notes/manifest.json">
+<link rel="canonical" href="https://goyal-aman.github.io/digital-garden-notes/load-balancer-vs-api-gateway----understanding-the-differences/">
+<link rel="stylesheet" href="/digital-garden-notes/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/digital-garden-notes/fuse.min.js"></script>
+  <script defer src="/digital-garden-notes/en.search.min.912fb9106c652f3661c28f808347883acc8f115f33007e38c1cb5b8cd8d57562.js" integrity="sha256-kS&#43;5EGxlLzZhwo&#43;Ag0eIOsyPEV8zAH44wctbjNjVdWI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/digital-garden-notes/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/digital-garden-notes/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Load Balancer vs API Gateway -  Understanding the Differences</h3>
+
+  <label for="toc-control">
+    
+    <img src="/digital-garden-notes/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>In modern application architectures, both Load Balancers and API Gateways play crucial roles in ensuring efficient resource utilization and enhanced performance. However, they serve different purposes and function in unique ways. Here’s a brief overview of each component, along with their differences and use cases.</p>
+<h4 id="what-is-a-load-balancer">
+  What is a Load Balancer?
+  <a class="anchor" href="#what-is-a-load-balancer">#</a>
+</h4>
+<p>A Load Balancer is a device or software that distributes incoming network traffic across multiple servers. The primary goal is to ensure no single server becomes overwhelmed, which can lead to degraded performance or downtime. Load Balancers improve application availability and reliability by:</p>
+<ul>
+<li><strong>Distributing traffic</strong>: Balancing the load among several servers, leading to improved resource utilization.</li>
+<li><strong>Fault tolerance</strong>: Automatically rerouting traffic from failed servers to healthy ones.</li>
+<li><strong>Scalability</strong>: Easily adding or removing servers based on demand.</li>
+</ul>
+<h4 id="what-is-an-api-gateway">
+  What is an API Gateway?
+  <a class="anchor" href="#what-is-an-api-gateway">#</a>
+</h4>
+<p>An API Gateway is a server that acts as an intermediary between clients and backend services. It manages API requests, handles traffic, and provides additional functionality such as authentication, logging, rate limiting, and response transformation. Key features of an API Gateway include:</p>
+<ul>
+<li><strong>Centralized access point</strong>: Serving as the entry point for all API requests, streamlining communication between clients and services.</li>
+<li><strong>Traffic management</strong>: Handling and directing requests to appropriate services based on routing rules.</li>
+<li><strong>Security</strong>: Implementing authentication and authorization mechanisms to protect backend services.</li>
+</ul>
+<h4 id="key-differences">
+  Key Differences
+  <a class="anchor" href="#key-differences">#</a>
+</h4>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Load Balancer</th>
+          <th>API Gateway</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Primary Function</td>
+          <td>Distributes traffic among multiple servers</td>
+          <td>Manages API requests and responses</td>
+      </tr>
+      <tr>
+          <td>Use Case</td>
+          <td>Enhancing availability and performance</td>
+          <td>Centralized access and management of APIs</td>
+      </tr>
+      <tr>
+          <td>Protocol Support</td>
+          <td>Primarily operates at the transport layer (TCP/UDP)</td>
+          <td>Operates at the application layer (HTTP/HTTPS)</td>
+      </tr>
+      <tr>
+          <td>Features</td>
+          <td>Load distribution, health checks, SSL termination</td>
+          <td>Authentication, rate limiting, logging, caching</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="use-cases">
+  Use Cases
+  <a class="anchor" href="#use-cases">#</a>
+</h4>
+<ul>
+<li><strong>Load Balancer</strong>: Ideal for web applications, microservices, or any architecture where traffic distribution is essential for performance and availability.</li>
+<li><strong>API Gateway</strong>: Best suited for scenarios where APIs are exposed to clients, providing a single point of entry for managing requests, securing services, and optimizing communication.</li>
+</ul>
+<h4 id="diagram-load-balancer-vs-api-gateway">
+  Diagram: Load Balancer vs. API Gateway
+  <a class="anchor" href="#diagram-load-balancer-vs-api-gateway">#</a>
+</h4>
+<p>Below is a diagram illustrating the relationship between clients, Load Balancers, API Gateways, and backend services:</p>
+<p><img src="https://goyal-aman.github.io/notes/Notes/Load%20Balancer%20vs.%20API%20Gateway%20Understanding%20the%20Differences/API%20Mermaid.svg" alt="" /></p>
+<h3 id="conclusion">
+  Conclusion
+  <a class="anchor" href="#conclusion">#</a>
+</h3>
+<p>Understanding the differences between Load Balancers and API Gateways is crucial for designing scalable and efficient applications. While Load Balancers focus on distributing network traffic and enhancing performance, API Gateways manage API interactions, providing additional features like security and traffic management. Together, they form an essential part of modern cloud-native architectures, ensuring smooth operation and a seamless user experience.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
