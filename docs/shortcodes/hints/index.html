@@ -3,22 +3,44 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="
+  Hints
+  #
+
+Hint shortcode can be used as hint/alerts/notification block.
+There are 3 colors to choose: info, warning and danger.
+{{% hint [info|warning|danger] %}}
+**Markdown content**  
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+{{% /hint %}}
+
+  Example
+  #
+
+
+Markdown content
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://goyal-aman.github.io/digital-garden-notes/categories/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://goyal-aman.github.io/digital-garden-notes/docs/shortcodes/hints/">
   <meta property="og:site_name" content="My New Hugo Site">
-  <meta property="og:title" content="Categories">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Hints # Hint shortcode can be used as hint/alerts/notification block.
+There are 3 colors to choose: info, warning and danger.
+{{% hint [info|warning|danger] %}} **Markdown content** Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa {{% /hint %}} Example # Markdown content
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-<title>Categories | My New Hugo Site</title>
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Hints | My New Hugo Site</title>
 <link rel="icon" href="/digital-garden-notes/favicon.png" >
 <link rel="manifest" href="/digital-garden-notes/manifest.json">
-<link rel="canonical" href="https://goyal-aman.github.io/digital-garden-notes/categories/">
+<link rel="canonical" href="https://goyal-aman.github.io/digital-garden-notes/docs/shortcodes/hints/">
 <link rel="stylesheet" href="/digital-garden-notes/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/digital-garden-notes/fuse.min.js"></script>
   <script defer src="/digital-garden-notes/en.search.min.9d135c1f908dcaea5acb23ae5805827c856da5291f25d6b6a8442b8208e515e9.js" integrity="sha256-nRNcH5CNyupayyOuWAWCfIVtpSkfJda2qEQrggjlFek=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://goyal-aman.github.io/digital-garden-notes/categories/index.xml" title="My New Hugo Site" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -236,7 +258,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/digital-garden-notes/docs/shortcodes/hints/" class="">Hints</a>
+    <a href="/digital-garden-notes/docs/shortcodes/hints/" class="active">Hints</a>
   
 
         </li>
@@ -333,7 +355,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/digital-garden-notes/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Categories</h3>
+  <h3>Hints</h3>
 
   <label for="toc-control">
     
@@ -346,69 +368,13 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/categories/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/categories/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/go/">Go</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/hugo/">Hugo</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/templates/">Templates</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/themes/">Themes</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#example">Example</a></li>
   </ul>
 </nav>
+
 
 
   </aside>
@@ -418,51 +384,37 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/digital-garden-notes/categories/development/">Development</a>
-    </h2>
-    
-  <div class="flex align-center text-small book-post-date">
-    <img src="/digital-garden-notes/svg/calendar.svg" class="book-icon " alt="" />
-    <span>April 2, 2014</span>
-  </div>
-
-
-
-  
-
-  
-
-
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/digital-garden-notes/categories/golang/">Golang</a>
-    </h2>
-    
-  <div class="flex align-center text-small book-post-date">
-    <img src="/digital-garden-notes/svg/calendar.svg" class="book-icon " alt="" />
-    <span>April 2, 2014</span>
-  </div>
-
-
-
-  
-
-  
-
-
-    <p>
-    </p>
-  </article>
-  
-
-  
+  <article class="markdown book-article"><h1 id="hints">
+  Hints
+  <a class="anchor" href="#hints">#</a>
+</h1>
+<p>Hint shortcode can be used as hint/alerts/notification block.<br>
+There are 3 colors to choose: <code>info</code>, <code>warning</code> and <code>danger</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">hint</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">info</span><span style="color:#f92672">|</span><span style="color:#a6e22e">warning</span><span style="color:#f92672">|</span><span style="color:#a6e22e">danger</span><span style="color:#f92672">]</span> <span style="color:#f92672">%</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span>**Markdown content**  
+</span></span><span style="display:flex;"><span>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+</span></span><span style="display:flex;"><span>stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">%</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">hint</span> <span style="color:#f92672">%</span><span style="color:#75715e">}}</span>
+</span></span></code></pre></div><h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<!-- raw HTML omitted -->
+<p><strong>Markdown content</strong><br>
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>Markdown content</strong><br>
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>Markdown content</strong><br>
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa</p>
+<!-- raw HTML omitted -->
+</article>
  
       
 
@@ -487,6 +439,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -496,69 +452,13 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/categories/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/categories/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/development/">Development</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/go/">Go</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/golang/">Golang</a>
-          <span>2</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/hugo/">Hugo</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/templates/">Templates</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/digital-garden-notes/tags/themes/">Themes</a>
-          <span>1</span>
-        </li>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#example">Example</a></li>
   </ul>
 </nav>
+
 
  
       </div>
