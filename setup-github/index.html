@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Check if you have an SSH key
+  #
+
+Run the following command to see if you already have an SSH key:
+bash
+Copy code
+ls -al ~/.ssh
+You should see something like id_rsa and id_rsa.pub. If these files are not present, you’ll need to generate a new SSH key.
+
+  2. Generate a new SSH key (if you don&rsquo;t have one)
+  #
+
+If you don&rsquo;t have an SSH key, you can create one by running:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://goyal-aman.github.io/digital-garden-notes/setup-github/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Check if you have an SSH key # Run the following command to see if you already have an SSH key:
+bash
+Copy code
+ls -al ~/.ssh
+You should see something like id_rsa and id_rsa.pub. If these files are not present, you’ll need to generate a new SSH key.
+2. Generate a new SSH key (if you don’t have one) # If you don’t have an SSH key, you can create one by running:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+<title>Setup Github | My New Hugo Site</title>
+<link rel="icon" href="/digital-garden-notes/favicon.png" >
+<link rel="manifest" href="/digital-garden-notes/manifest.json">
+<link rel="canonical" href="https://goyal-aman.github.io/digital-garden-notes/setup-github/">
+<link rel="stylesheet" href="/digital-garden-notes/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/digital-garden-notes/fuse.min.js"></script>
+  <script defer src="/digital-garden-notes/en.search.min.4dbdc58401bcdbc84fa3b44aea2b7e09f1ee7823e73ef0953c8e5e3cdcdaa569.js" integrity="sha256-Tb3FhAG828hPo7RK6it&#43;CfHueCPnPvCVPI5ePNzapWk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/digital-garden-notes/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/digital-garden-notes/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Setup Github</h3>
+
+  <label for="toc-control">
+    
+    <img src="/digital-garden-notes/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#check-if-you-have-an-ssh-key"><strong>Check if you have an SSH key</strong></a></li>
+        <li><a href="#2-generate-a-new-ssh-key-if-you-dont-have-one">2. <strong>Generate a new SSH key (if you don&rsquo;t have one)</strong></a></li>
+        <li><a href="#3-add-your-ssh-key-to-the-ssh-agent">3. <strong>Add your SSH key to the ssh-agent</strong></a></li>
+        <li><a href="#4-add-your-ssh-key-to-github">4. <strong>Add your SSH key to GitHub</strong></a></li>
+        <li><a href="#5-test-your-ssh-connection-to-github">5. <strong>Test your SSH connection to GitHub</strong></a></li>
+        <li><a href="#6-try-pushing-again">6. <strong>Try pushing again</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h3 id="check-if-you-have-an-ssh-key">
+  <strong>Check if you have an SSH key</strong>
+  <a class="anchor" href="#check-if-you-have-an-ssh-key">#</a>
+</h3>
+<p>Run the following command to see if you already have an SSH key:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>ls -al ~/.ssh</code></p>
+<p>You should see something like <code>id_rsa</code> and <code>id_rsa.pub</code>. If these files are not present, you’ll need to generate a new SSH key.</p>
+<h3 id="2-generate-a-new-ssh-key-if-you-dont-have-one">
+  2. <strong>Generate a new SSH key (if you don&rsquo;t have one)</strong>
+  <a class="anchor" href="#2-generate-a-new-ssh-key-if-you-dont-have-one">#</a>
+</h3>
+<p>If you don&rsquo;t have an SSH key, you can create one by running:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></p>
+<p>Follow the prompts, and it will generate a key pair (<code>id_rsa</code> and <code>id_rsa.pub</code>) in the <code>~/.ssh</code> directory.</p>
+<h3 id="3-add-your-ssh-key-to-the-ssh-agent">
+  3. <strong>Add your SSH key to the ssh-agent</strong>
+  <a class="anchor" href="#3-add-your-ssh-key-to-the-ssh-agent">#</a>
+</h3>
+<p>Run the following commands to start the <code>ssh-agent</code> and add your key:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>eval &quot;$(ssh-agent -s)&quot; ssh-add ~/.ssh/id_rsa</code></p>
+<h3 id="4-add-your-ssh-key-to-github">
+  4. <strong>Add your SSH key to GitHub</strong>
+  <a class="anchor" href="#4-add-your-ssh-key-to-github">#</a>
+</h3>
+<p>Now, you need to add the public key to your GitHub account:</p>
+<ul>
+<li>
+<p>Copy the SSH key to your clipboard:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>cat ~/.ssh/id_rsa.pub</code></p>
+</li>
+<li>
+<p>Go to GitHub:</p>
+<ul>
+<li>Navigate to <strong>Settings</strong> &gt; <strong>SSH and GPG keys</strong>.</li>
+<li>Click <strong>New SSH Key</strong> and paste your public key there.</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-test-your-ssh-connection-to-github">
+  5. <strong>Test your SSH connection to GitHub</strong>
+  <a class="anchor" href="#5-test-your-ssh-connection-to-github">#</a>
+</h3>
+<p>To confirm that GitHub is now recognizing your SSH key, run:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>If successful, you&rsquo;ll see a message like:</p>
+<p>vbnet</p>
+<p>Copy code</p>
+<p><code>Hi your_username! You've successfully authenticated, but GitHub does not provide shell access.</code></p>
+<h3 id="6-try-pushing-again">
+  6. <strong>Try pushing again</strong>
+  <a class="anchor" href="#6-try-pushing-again">#</a>
+</h3>
+<p>Now, you can try pushing your changes again:</p>
+<p>bash</p>
+<p>Copy code</p>
+<p><code>git push origin main</code></p>
+<p>This should work without the permission error. Let me know if you encounter any other issues!</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#check-if-you-have-an-ssh-key"><strong>Check if you have an SSH key</strong></a></li>
+        <li><a href="#2-generate-a-new-ssh-key-if-you-dont-have-one">2. <strong>Generate a new SSH key (if you don&rsquo;t have one)</strong></a></li>
+        <li><a href="#3-add-your-ssh-key-to-the-ssh-agent">3. <strong>Add your SSH key to the ssh-agent</strong></a></li>
+        <li><a href="#4-add-your-ssh-key-to-github">4. <strong>Add your SSH key to GitHub</strong></a></li>
+        <li><a href="#5-test-your-ssh-connection-to-github">5. <strong>Test your SSH connection to GitHub</strong></a></li>
+        <li><a href="#6-try-pushing-again">6. <strong>Try pushing again</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
