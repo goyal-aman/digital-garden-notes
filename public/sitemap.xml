@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/load-balancer-vs-api-gateway----understanding-the-differences/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://goyal-aman.github.io/digital-garden-notes/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/personal-knowledge-management-with-hugo--obsidian/</loc>
     <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goyal-aman.github.io/digital-garden-notes/setup-github/</loc>
