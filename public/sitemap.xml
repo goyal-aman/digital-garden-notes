@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.1.100:1313/docs/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/docs/</loc>
     <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.100:1313/docs/load-balancer-vs-api-gateway----understanding-the-differences/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/docs/load-balancer-vs-api-gateway----understanding-the-differences/</loc>
     <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.100:1313/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/</loc>
     <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.100:1313/docs/personal-knowledge-management-with-hugo--obsidian/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/docs/personal-knowledge-management-with-hugo--obsidian/</loc>
     <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.100:1313/docs/setup-github/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/docs/setup-github/</loc>
   </url><url>
-    <loc>http://192.168.1.100:1313/categories/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/categories/</loc>
   </url><url>
-    <loc>http://192.168.1.100:1313/tags/</loc>
+    <loc>https://goyal-aman.github.io/digital-garden-notes/tags/</loc>
   </url>
 </urlset>
