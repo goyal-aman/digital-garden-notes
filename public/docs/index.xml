@@ -2,10 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on My New Hugo Site</title>
-    <link>https://goyal-aman.github.io/digital-garden-notes/docs/</link>
+    <link>http://192.168.1.100:1313/docs/</link>
     <description>Recent content in Docs on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://goyal-aman.github.io/digital-garden-notes/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.1.100:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load Balancer vs API Gateway -  Understanding the Differences</title>
+      <link>http://192.168.1.100:1313/docs/load-balancer-vs-api-gateway----understanding-the-differences/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.100:1313/docs/load-balancer-vs-api-gateway----understanding-the-differences/</guid>
+      <description>&lt;p&gt;In modern application architectures, both Load Balancers and API Gateways play crucial roles in ensuring efficient resource utilization and enhanced performance. However, they serve different purposes and function in unique ways. Here’s a brief overview of each component, along with their differences and use cases.&lt;/p&gt;&#xA;&lt;h4 id=&#34;what-is-a-load-balancer&#34;&gt;&#xA;  What is a Load Balancer?&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#what-is-a-load-balancer&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;A Load Balancer is a device or software that distributes incoming network traffic across multiple servers. The primary goal is to ensure no single server becomes overwhelmed, which can lead to degraded performance or downtime. Load Balancers improve application availability and reliability by:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Personal Knowledge Management with Hugo &amp; Obsidian</title>
+      <link>http://192.168.1.100:1313/docs/personal-knowledge-management-with-hugo--obsidian/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.100:1313/docs/personal-knowledge-management-with-hugo--obsidian/</guid>
+      <description>&lt;h3 id=&#34;prerequisites&#34;&gt;&#xA;  Prerequisites&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#prerequisites&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Obsidian&lt;/strong&gt; installed on your machine&lt;/li&gt;&#xA;&lt;li&gt;Basic knowledge of &lt;strong&gt;Markdown&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;A &lt;strong&gt;GitHub&lt;/strong&gt; account&lt;/li&gt;&#xA;&lt;li&gt;Hugo installed on your machine (if not, follow the official installation guide)&lt;/li&gt;&#xA;&lt;li&gt;Git installed on your machine&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;step-1-set-up-github-repository&#34;&gt;&#xA;  Step 1: Set up GitHub repository&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#step-1-set-up-github-repository&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Create a new repository&lt;/strong&gt; on GitHub.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Go to your &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; account and create a new repository.&lt;/li&gt;&#xA;&lt;li&gt;Name it &lt;code&gt;&amp;lt;your-username&amp;gt;.github.io&lt;/code&gt; (replace &lt;code&gt;&amp;lt;your-username&amp;gt;&lt;/code&gt; with your GitHub username). This is important because GitHub Pages uses this naming convention to host user pages.&lt;/li&gt;&#xA;&lt;li&gt;Set it as &lt;strong&gt;public&lt;/strong&gt; and initialize it with a &lt;code&gt;README.md&lt;/code&gt; file.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Clone the repository&lt;/strong&gt; to your local machine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://192.168.1.100:1313/docs/setup-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.100:1313/docs/setup-github/</guid>
+      <description>&lt;h3 id=&#34;check-if-you-have-an-ssh-key&#34;&gt;&#xA;  &lt;strong&gt;Check if you have an SSH key&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#check-if-you-have-an-ssh-key&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Run the following command to see if you already have an SSH key:&lt;/p&gt;&#xA;&lt;p&gt;bash&lt;/p&gt;&#xA;&lt;p&gt;Copy code&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;ls -al ~/.ssh&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;You should see something like &lt;code&gt;id_rsa&lt;/code&gt; and &lt;code&gt;id_rsa.pub&lt;/code&gt;. If these files are not present, you’ll need to generate a new SSH key.&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-generate-a-new-ssh-key-if-you-dont-have-one&#34;&gt;&#xA;  2. &lt;strong&gt;Generate a new SSH key (if you don&amp;rsquo;t have one)&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#2-generate-a-new-ssh-key-if-you-dont-have-one&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;If you don&amp;rsquo;t have an SSH key, you can create one by running:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -2,5 +2,10 @@ baseURL = 'https://goyal-aman.github.io/digital-garden-notes/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'hugo-book'
+
+# Auto sidebar config for Hugo Book
 [params.book]
-	autoSection = true
+  # Automatically generate a sidebar navigation based on the content structure.
+  # Set this to true to use automatic page listing in the sidebar.
+  autoSection = true
+
